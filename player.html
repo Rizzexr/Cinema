@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="player.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="player.js" type="text/javascript"></script>
-    <title>RIZZEXR</title>
+    <title>RIZZEXR - Секретный уровень</title>
 </head>
 <body>
-    <header><a href="#">ФИЛЬМЫ</a><a href="#">СЕРИАЛЫ</a><a href="#">КОМИКСЫ</a></header>
-    <div class="film">
+    <header>
+        <nav>
+            <a href="#" aria-label="Перейти к фильмам">ФИЛЬМЫ</a>
+            <a href="#" aria-label="Перейти к сериалам">СЕРИАЛЫ</a>
+            <a href="#" aria-label="Перейти к комиксам">КОМИКСЫ</a>
+        </nav>
+    </header>
+    <main class="film">
         <div class="line">
-            <img src="media/logo2.png" id="film-logo">
+            <img src="media/logo2.png" id="film-logo" alt="Логотип сериала Секретный уровень">
             <div class="block">
                 <h1>Секретный уровень</h1>
-                <p>Секретный уровень — анимационный сериал-антология, где каждый эпизод посвящён культовой видеоигре. Герои попадают в игровые миры, сталкиваясь с опасностями, квестами и моральными выборами. Каждый уровень — новая история, стиль и атмосфера, объединённые любовью к геймингу</p>
-                <h2>Рейтинг IMDB: 7.3 из 10</h2>
+                <p>Секретный уровень — анимационный сериал-антология, где каждый эпизод посвящён культовой видеоигре. Герои попадают в игровые миры, сталкиваясь с опасностями, квестами и моральными выборами. Каждый уровень — новая история, стиль и атмосфера, объединённые любовью к геймингу.</p>
+                <h2>Рейтинг IMDB: 7.3 / 10</h2>
             </div>
         </div>
-    </div>
-    <div id="player"></div>
-
+        <div id="player" aria-label="Видео-плеер для сериала Секретный уровень"></div>
+    </main>
     <script>
         var player = new Playerjs({id:"player", file:"media/video.mp4", poster:"media/playerbg.webp"});
     </script>
